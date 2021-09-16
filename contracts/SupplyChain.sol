@@ -72,8 +72,8 @@ contract SupplyChain {
       sku: skuCount, 
       price: _price, 
       state: State.ForSale, 
-      seller: msg.sender, 
-      buyer: address(0)
+      seller: payable(msg.sender), 
+      buyer: payable(address(0))
     });
     skuCount = skuCount + 1;
     emit LogForSale(skuCount);
@@ -84,7 +84,7 @@ contract SupplyChain {
   public payable forSale(sku) paidEnough(sku) checkValue(sku)
   {
     items[sku].state = State.Sold;
-    items[sku].buyer = msg.sender;
+    items[sku].buyer = payable(msg.sender);
     items[sku].seller.transfer(items[sku].price);
     emit LogSold(sku);
   }

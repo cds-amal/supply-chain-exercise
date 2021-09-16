@@ -10,6 +10,7 @@ const items = (ca) => {
   const item = contractDefn(ca).nodes.find((n) => n.name === "Item");
   if (!item) return null;
 
+  console.log("%O", item.members);
   return item
     .members
     .map((t) => ({
@@ -36,6 +37,8 @@ const isPayable = members => variableName => {
 const isType = members => variableName => type => {
   if (members === undefined) return false;
   const definition = members.find((item) => item.name === variableName);
+  console.log("definition: %O", definition);
+  console.log("definition.type" , definition.type);
   return definition && definition.type === type;
 };
 

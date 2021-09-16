@@ -1,0 +1,182 @@
+Using network 'test'.
+
+
+Compiling your contracts...
+===========================
+> Compiling ./test/TestSupplyChain.sol
+> Artifacts written to /tmp/test--70322-8CaJSwbTXUno
+> Compiled successfully using:
+   - solc: 0.8.7+commit.e28d00a7.Emscripten.clang
+
+
+
+  Contract: SupplyChain
+    Variables
+      Item struct
+[
+  {
+    constant: false,
+    id: 50,
+    mutability: 'mutable',
+    name: 'name',
+    nameLocation: '259:4:1',
+    nodeType: 'VariableDeclaration',
+    scope: 62,
+    src: '252:11:1',
+    stateVariable: false,
+    storageLocation: 'default',
+    typeDescriptions: { typeIdentifier: 't_string_storage_ptr', typeString: 'string' },
+    typeName: {
+      id: 49,
+      name: 'string',
+      nodeType: 'ElementaryTypeName',
+      src: '252:6:1',
+      typeDescriptions: [Object]
+    },
+    visibility: 'internal'
+  },
+  {
+    constant: false,
+    id: 52,
+    mutability: 'mutable',
+    name: 'sku',
+    nameLocation: '274:3:1',
+    nodeType: 'VariableDeclaration',
+    scope: 62,
+    src: '269:8:1',
+    stateVariable: false,
+    storageLocation: 'default',
+    typeDescriptions: { typeIdentifier: 't_uint256', typeString: 'uint256' },
+    typeName: {
+      id: 51,
+      name: 'uint',
+      nodeType: 'ElementaryTypeName',
+      src: '269:4:1',
+      typeDescriptions: [Object]
+    },
+    visibility: 'internal'
+  },
+  {
+    constant: false,
+    id: 54,
+    mutability: 'mutable',
+    name: 'price',
+    nameLocation: '288:5:1',
+    nodeType: 'VariableDeclaration',
+    scope: 62,
+    src: '283:10:1',
+    stateVariable: false,
+    storageLocation: 'default',
+    typeDescriptions: { typeIdentifier: 't_uint256', typeString: 'uint256' },
+    typeName: {
+      id: 53,
+      name: 'uint',
+      nodeType: 'ElementaryTypeName',
+      src: '283:4:1',
+      typeDescriptions: [Object]
+    },
+    visibility: 'internal'
+  },
+  {
+    constant: false,
+    id: 57,
+    mutability: 'mutable',
+    name: 'state',
+    nameLocation: '305:5:1',
+    nodeType: 'VariableDeclaration',
+    scope: 62,
+    src: '299:11:1',
+    stateVariable: false,
+    storageLocation: 'default',
+    typeDescriptions: {
+      typeIdentifier: 't_enum$_State_$48',
+      typeString: 'enum SupplyChain.State'
+    },
+    typeName: {
+      id: 56,
+      nodeType: 'UserDefinedTypeName',
+      pathNode: [Object],
+      referencedDeclaration: 48,
+      src: '299:5:1',
+      typeDescriptions: [Object]
+    },
+    visibility: 'internal'
+  },
+  {
+    constant: false,
+    id: 59,
+    mutability: 'mutable',
+    name: 'seller',
+    nameLocation: '332:6:1',
+    nodeType: 'VariableDeclaration',
+    scope: 62,
+    src: '316:22:1',
+    stateVariable: false,
+    storageLocation: 'default',
+    typeDescriptions: {
+      typeIdentifier: 't_address_payable',
+      typeString: 'address payable'
+    },
+    typeName: {
+      id: 58,
+      name: 'address',
+      nodeType: 'ElementaryTypeName',
+      src: '316:15:1',
+      stateMutability: 'payable',
+      typeDescriptions: [Object]
+    },
+    visibility: 'internal'
+  },
+  {
+    constant: false,
+    id: 61,
+    mutability: 'mutable',
+    name: 'buyer',
+    nameLocation: '360:5:1',
+    nodeType: 'VariableDeclaration',
+    scope: 62,
+    src: '344:21:1',
+    stateVariable: false,
+    storageLocation: 'default',
+    typeDescriptions: {
+      typeIdentifier: 't_address_payable',
+      typeString: 'address payable'
+    },
+    typeName: {
+      id: 60,
+      name: 'address',
+      nodeType: 'ElementaryTypeName',
+      src: '344:15:1',
+      stateMutability: 'payable',
+      typeDescriptions: [Object]
+    },
+    visibility: 'internal'
+  }
+]
+definition: {
+  name: 'state',
+  nodeType: 'VariableDeclaration',
+  stateVariable: false,
+  type: undefined,
+  mutability: undefined
+}
+definition.type undefined
+        1) should have a `state`
+    > No events were emitted
+
+
+  0 passing (89ms)
+  1 failing
+
+  1) Contract: SupplyChain
+       Variables
+         Item struct
+           should have a `state`:
+     AssertionError: `state` should be of type `State`
+      at Context.<anonymous> (test/supply_chain.test.js:117:9)
+      at processImmediate (internal/timers.js:461:21)
+
+
+
+╭─amal@falafel  ~/dev/CA/supply-chain-exercise ‹node-12.22.5› ‹ruby-3.0.0› ‹› (solve*)
+╰─$

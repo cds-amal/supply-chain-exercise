@@ -1,0 +1,175 @@
+Using network 'test'.
+
+
+Compiling your contracts...
+===========================
+> Compiling ./test/TestSupplyChain.sol
+> Artifacts written to /tmp/test--71508-RvKh6nH9ZMcj
+> Compiled successfully using:
+   - solc: 0.6.12+commit.27d51765.Emscripten.clang
+
+
+
+  Contract: SupplyChain
+    Variables
+      Item struct
+[
+  {
+    constant: false,
+    id: 16,
+    mutability: 'mutable',
+    name: 'name',
+    nodeType: 'VariableDeclaration',
+    overrides: null,
+    scope: 27,
+    src: '252:11:0',
+    stateVariable: false,
+    storageLocation: 'default',
+    typeDescriptions: { typeIdentifier: 't_string_storage_ptr', typeString: 'string' },
+    typeName: {
+      id: 15,
+      name: 'string',
+      nodeType: 'ElementaryTypeName',
+      src: '252:6:0',
+      typeDescriptions: [Object]
+    },
+    value: null,
+    visibility: 'internal'
+  },
+  {
+    constant: false,
+    id: 18,
+    mutability: 'mutable',
+    name: 'sku',
+    nodeType: 'VariableDeclaration',
+    overrides: null,
+    scope: 27,
+    src: '269:8:0',
+    stateVariable: false,
+    storageLocation: 'default',
+    typeDescriptions: { typeIdentifier: 't_uint256', typeString: 'uint256' },
+    typeName: {
+      id: 17,
+      name: 'uint',
+      nodeType: 'ElementaryTypeName',
+      src: '269:4:0',
+      typeDescriptions: [Object]
+    },
+    value: null,
+    visibility: 'internal'
+  },
+  {
+    constant: false,
+    id: 20,
+    mutability: 'mutable',
+    name: 'price',
+    nodeType: 'VariableDeclaration',
+    overrides: null,
+    scope: 27,
+    src: '283:10:0',
+    stateVariable: false,
+    storageLocation: 'default',
+    typeDescriptions: { typeIdentifier: 't_uint256', typeString: 'uint256' },
+    typeName: {
+      id: 19,
+      name: 'uint',
+      nodeType: 'ElementaryTypeName',
+      src: '283:4:0',
+      typeDescriptions: [Object]
+    },
+    value: null,
+    visibility: 'internal'
+  },
+  {
+    constant: false,
+    id: 22,
+    mutability: 'mutable',
+    name: 'state',
+    nodeType: 'VariableDeclaration',
+    overrides: null,
+    scope: 27,
+    src: '299:11:0',
+    stateVariable: false,
+    storageLocation: 'default',
+    typeDescriptions: {
+      typeIdentifier: 't_enum$_State_$14',
+      typeString: 'enum SupplyChain.State'
+    },
+    typeName: {
+      contractScope: null,
+      id: 21,
+      name: 'State',
+      nodeType: 'UserDefinedTypeName',
+      referencedDeclaration: 14,
+      src: '299:5:0',
+      typeDescriptions: [Object]
+    },
+    value: null,
+    visibility: 'internal'
+  },
+  {
+    constant: false,
+    id: 24,
+    mutability: 'mutable',
+    name: 'seller',
+    nodeType: 'VariableDeclaration',
+    overrides: null,
+    scope: 27,
+    src: '316:22:0',
+    stateVariable: false,
+    storageLocation: 'default',
+    typeDescriptions: {
+      typeIdentifier: 't_address_payable',
+      typeString: 'address payable'
+    },
+    typeName: {
+      id: 23,
+      name: 'address',
+      nodeType: 'ElementaryTypeName',
+      src: '316:15:0',
+      stateMutability: 'payable',
+      typeDescriptions: [Object]
+    },
+    value: null,
+    visibility: 'internal'
+  },
+  {
+    constant: false,
+    id: 26,
+    mutability: 'mutable',
+    name: 'buyer',
+    nodeType: 'VariableDeclaration',
+    overrides: null,
+    scope: 27,
+    src: '344:21:0',
+    stateVariable: false,
+    storageLocation: 'default',
+    typeDescriptions: {
+      typeIdentifier: 't_address_payable',
+      typeString: 'address payable'
+    },
+    typeName: {
+      id: 25,
+      name: 'address',
+      nodeType: 'ElementaryTypeName',
+      src: '344:15:0',
+      stateMutability: 'payable',
+      typeDescriptions: [Object]
+    },
+    value: null,
+    visibility: 'internal'
+  }
+]
+definition: {
+  name: 'state',
+  nodeType: 'VariableDeclaration',
+  stateVariable: false,
+  type: 'State',
+  mutability: undefined
+}
+definition.type State
+        ✓ should have a `state`
+
+
+  1 passing (80ms)
+

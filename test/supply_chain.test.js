@@ -109,7 +109,7 @@ contract("SupplyChain", function (accounts) {
         );
       });
 
-      it("should have a `state`", () => {
+      it.only("should have a `state`", () => {
         assert(
           isDefined(subjectStruct)("state"), 
           "Struct Item should have a `state` member"
